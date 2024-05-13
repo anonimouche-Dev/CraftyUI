@@ -2,13 +2,18 @@
 @using System.IO;
 <h1>Story</h1>
 
+        
 @if (heroName is null)
 {
+<<<<<<< Updated upstream
     <div class="language-selection">
         <select id="SelectLangage" @bind="@SelectLangage">
             <option value="EN">EN</option>
             <option value="FR">FR</option>
         </select>
+=======
+  
+>>>>>>> Stashed changes
         @if (SelectLangage == "EN")
         {
             UpdateStories(SelectLangage);
@@ -18,8 +23,7 @@
         {
             UpdateStories(SelectLangage);
             <input id="hero-name-input" type="text" @bind="@heroName" placeholder="Entrez votre nom" />
-        }
-    </div>
+        }  
 }
 else
 {
@@ -113,6 +117,12 @@ else
         }
     </div>
 }
+<div class="language-selection">
+    <select @onchange="OnSelectLangageChanged">
+        <option value="EN">English</option>
+        <option value="FR">Français</option>
+    </select>
+</div>
 <style>
     /* Style for the select element */
     #SelectLangage {

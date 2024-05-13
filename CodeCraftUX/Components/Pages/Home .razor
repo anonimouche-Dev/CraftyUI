@@ -1,17 +1,24 @@
 ﻿@page "/"
-
+@using Microsoft.AspNetCore.Authentication.Google
+@using Microsoft.AspNetCore.Identity
 <h1>CodeCraft_UX</h1>
 
 Welcome to CodeCraft_UX app.
 <h6></h6>
 
-<h6>V: @CurrentVersion</h6>
+<h6>V: 1.0.0</h6>
+
+<h1>Connexion avec Google</h1>
+
+<form method="post" asp-controller="Account" asp-action="LoginWithGoogle">
+    <button type="submit">Se connecter avec Google</button>
+</form>
 
 @code {
-    private Version currentVersion = new Version(1, 0, 0); // Version initiale
-
-    protected override void OnInitialized()
+    [CascadingAuthentication]
+    public async Task<IActionResult> OnGet()
     {
+<<<<<<< Updated upstream
         // Obtenir le numéro de build actuel
         var buildNumber = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.Build;
         
@@ -21,6 +28,18 @@ Welcome to CodeCraft_UX app.
             currentVersion = new Version(currentVersion.Major, currentVersion.Minor, buildNumber);
         }
     }
+=======
+        var googleAuth = new AuthenticationProperties
+            {
+                RedirectUri = "/Account/LoginWithGoogle"
+            };
+>>>>>>> Stashed changes
 
-    private string CurrentVersion => currentVersion.ToString();
+        await HttpContext.SignInAsync("Google", googleAuth);
+
+        // Récupération du nom de l'utilisateur actif
+        var googleNameRecupered = User.FindFirstValue("name");
+
+        return Page();
+    }
 }
