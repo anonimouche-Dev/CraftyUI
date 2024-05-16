@@ -5,15 +5,13 @@
         
 @if (heroName is null)
 {
-<<<<<<< Updated upstream
-    <div class="language-selection">
+<div class="language-selection">
         <select id="SelectLangage" @bind="@SelectLangage">
             <option value="EN">EN</option>
             <option value="FR">FR</option>
         </select>
-=======
+
   
->>>>>>> Stashed changes
         @if (SelectLangage == "EN")
         {
             UpdateStories(SelectLangage);
@@ -24,6 +22,7 @@
             UpdateStories(SelectLangage);
             <input id="hero-name-input" type="text" @bind="@heroName" placeholder="Entrez votre nom" />
         }  
+        </div>
 }
 else
 {
