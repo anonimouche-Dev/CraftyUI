@@ -5,9 +5,9 @@
              x:Class="CodeCraftUX.App">
     <Application.Resources>
         <ResourceDictionary>
-          
-            <Color x:Key="PageBackgroundColor">#512bdf</Color>
-            <Color x:Key="PrimaryTextColor">White</Color>
+
+            <Color x:Key="PageBackgroundColor">yellow</Color>
+            <Color x:Key="PrimaryTextColor">black</Color>
 
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}" />

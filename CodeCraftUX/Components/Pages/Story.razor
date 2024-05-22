@@ -1,98 +1,30 @@
 ﻿@page "/Story"
-@using System.IO;
+@using System.IO
+@inject IJSRuntime JS
+
 <h1>Story</h1>
 
-        
-@if (heroName is null)
+@if (string.IsNullOrWhiteSpace(heroName))
 {
-<div class="language-selection">
-        <select id="SelectLangage" @bind="@SelectLangage">
-            <option value="EN">EN</option>
-            <option value="FR">FR</option>
+    <div class="language-selection">
+        <select @onchange="OnSelectLangageChanged" id="SelectLangage">
+            <option value="EN">English</option>
+            <option value="FR">Français</option>
         </select>
-
-  
-        @if (SelectLangage == "EN")
-        {
-            UpdateStories(SelectLangage);
-            <input id="hero-name-input" type="text" @bind="@heroName" placeholder="Enter your name" />
-        }
-        else if (SelectLangage == "FR")
-        {
-            UpdateStories(SelectLangage);
-            <input id="hero-name-input" type="text" @bind="@heroName" placeholder="Entrez votre nom" />
-        }  
-        </div>
+        <input id="hero-name-input" type="text" @bind="@heroName" placeholder="@GetPlaceholderText()" />
+        <button @onclick="SaveHeroName">Valider</button>
+    </div>
 }
 else
 {
-    //EnregistrerDonnées();
-    <div class="language-selection">
-        <select id="SelectLangage" @bind="@SelectLangage" onclick="OnSelectLangageChanged">
-            <option value="EN">EN</option>
-            <option value="FR">FR</option>
-        </select>
-    </div>
-
     <div class="main-container">
+        <input type="text" @bind="searchQuery" placeholder="Search stories..." />
         @if (tellStory is null)
         {
-            <div class="story-container">  
-                @if (SelectLangage == "EN")
+            <div class="story-container">
+                <h3>@GetGreetingText()</h3>
+                @foreach (var story in FilteredStories())
                 {
-                    <h3>Hello @heroName</h3>
-                    UpdateStories(SelectLangage = "EN");
-                }
-                else if (SelectLangage == "FR")
-                {
-                    UpdateStories(SelectLangage = "EN");
-                    <h3>Bonjour @heroName</h3>
-                }
-                else
-                {
-                    UpdateStories(SelectLangage);
-                    <h3>Hello @heroName</h3>
-                }
-                @foreach (var story in stories)
-                {
-                    <style>
-                        .container {
-                            display: flex;
-                            flex-wrap: wrap;
-                            justify-content: space-between;
-                            align-items: center;
-                            width: 100%;
-                            max-width: 600px; /* Ajustez la largeur selon vos besoins */
-                            margin: 0 auto;
-                        }
-
-                        .frame {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            background-color: #ffffff;
-                            border: 1px solid #dddddd;
-                            border-radius: 5px;
-                            padding: 10px;
-                            width: 48%; /* Ajustez la largeur selon vos besoins */
-                            margin-bottom: 10px;
-                        }
-
-                        .image-container {
-                            width: 50%;
-                            text-align: center;
-                        }
-
-                            .image-container img {
-                                max-width: 100%;
-                                height: auto;
-                            }
-
-                        .text-container {
-                            text-align: center;
-                            margin-top: 10px;
-                        }
-                    </style>
                     <div class="story-card" @onclick="(() => tellStory = story)">
                         <div class="image-container">
                             <img alt="@story.Title" src="@story.Picture">
@@ -101,29 +33,104 @@ else
                             <h2>@story.Title</h2>
                         </div>
                     </div>
-
                 }
             </div>
         }
         else
         {
-
             <div class="story-modal">
                 <h4>@tellStory.Title</h4>
-                <p>@tellStory.Content</p>.
-                <button @onclick="(() => tellStory = null)">Read another story</button>
+                <p>@tellStory.Content</p>
+                <button @onclick="(() => tellStory = null)">@GetButtonText()</button>
             </div>
         }
     </div>
 }
-<div class="language-selection">
-    <select @onchange="OnSelectLangageChanged">
-        <option value="EN">English</option>
-        <option value="FR">Français</option>
-    </select>
+
+<div class="theme-switch">
+    <label>
+        <input type="checkbox" @onchange="ToggleTheme" />
+        Dark Mode
+    </label>
 </div>
+
 <style>
-    /* Style for the select element */
+    :root {
+        --background-color-light: #f0f4f8;
+        --text-color-light: #333333;
+        --container-bg-color-light: #ffffff;
+        --header-color-light: #333333;
+        --subtext-color-light: #aaaaaa;
+        --background-color-dark: #121212;
+        --text-color-dark: #ffffff;
+        --container-bg-color-dark: #1e1e1e;
+        --header-color-dark: #ffffff;
+        --subtext-color-dark: #bbbbbb;
+    }
+
+    body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
+
+    .container {
+        text-align: center;
+        background: var(--container-bg-color);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+        margin: 0 20px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        color: var(--header-color);
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: var(--text-color);
+        margin-bottom: 2rem;
+    }
+
+    .build-number {
+        font-size: 0.9rem;
+        color: var(--subtext-color);
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-google {
+        display: inline-block;
+        background-color: #4285f4;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+
+        .btn-google:hover {
+            background-color: #357ae8;
+        }
+
+    .development-notice {
+        font-size: 0.9rem;
+        color: #ff9800;
+        margin-top: 2rem;
+    }
+
+    .theme-switch {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
     #SelectLangage {
         padding: 8px 12px;
         font-size: 16px;
@@ -134,18 +141,15 @@ else
         margin-left: 10px;
     }
 
-    /* Style for select options */
-    #SelectLangage option {
-        background-color: #fff;
-        color: black;
-    }
+        #SelectLangage option {
+            background-color: #fff;
+            color: black;
+        }
 
-    /* Style for hover effect on options */
-    #SelectLangage option:hover {
-        background-color: #f0f0f0;
-    }
+            #SelectLangage option:hover {
+                background-color: #f0f0f0;
+            }
 
-    /* Style for input element */
     #hero-name-input {
         padding: 8px 12px;
         font-size: 16px;
@@ -154,19 +158,16 @@ else
         margin-left: 10px;
     }
 
-    /* Style for the main container */
     .main-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    /* Style for story card container */
     .story-container {
         width: 100%;
     }
 
-    /* Style for story card */
     .story-card {
         border: 1px solid;
         border-radius: 10px;
@@ -179,25 +180,21 @@ else
         cursor: pointer;
     }
 
-    /* Style for image container */
     .image-container {
         width: 50%;
     }
 
-    /* Style for story image */
     img {
         max-width: 100%;
         height: auto;
         border-radius: 5px;
     }
 
-    /* Style for text container */
     .text-container {
         width: 50%;
         padding: 0 10px;
     }
 
-    /* Style for story title */
     h2 {
         font-size: 24px;
         font-weight: bold;
@@ -205,15 +202,11 @@ else
         margin-bottom: 10px;
     }
 
-    /* Style for story content */
     p {
-
-font-size: 16px;
-margin-bottom: 10px;
-
+        font-size: 16px;
+        margin-bottom: 10px;
     }
 
-    /* Style for story modal */
     .story-modal {
         background-color: white;
         padding: 20px;
@@ -224,116 +217,157 @@ margin-bottom: 10px;
         margin-top: 50px;
     }
 
-    /* Style for story modal title */
-    .story-modal h4 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
+        .story-modal h4 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
 
-    /* Style for story modal button */
-    .story-modal button {
-        background-color: orange;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
+        .story-modal button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
-    /* Style for story modal button hover */
-    .story-modal button:hover {
-        background-color: darkorange;
-    }
+            .story-modal button:hover {
+                background-color: darkorange;
+            }
 
-    /* Style for language selection container */
     .language-selection {
         display: flex;
         align-items: center;
         margin-bottom: 20px;
     }
 
-    /* Style for language selection input */
-    .language-selection input {
-        margin-left: 10px;
-    }
+        .language-selection input {
+            margin-left: 10px;
+        }
 
-    /* Style for story card hover */
     .story-card:hover {
         transform: scale(1.05);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
 
+    /* Dark Mode Styles */
+    body.dark-mode {
+        --background-color: var(--background-color-dark);
+        --text-color: var(--text-color-dark);
+        --container-bg-color: var(--container-bg-color-dark);
+        --header-color: var(--header-color-dark);
+        --subtext-color: var(--subtext-color-dark);
+    }
+
+    .dark-mode .story-modal {
+        background-color: #333;
+        color: #fff;
+    }
+
+        .dark-mode .story-modal h4 {
+            color: #fff;
+        }
+
+        .dark-mode .story-modal button {
+            background-color: #ff9800;
+        }
 </style>
-    @code
-{
+
+@code {
     private const string defaultLanguage = "EN";
-    string SelectLangage = defaultLanguage;
+    private string SelectLangage = defaultLanguage;
+    private string searchQuery = string.Empty;
 
     public record History(string Title, string Picture, string Content);
 
     static string picturePath = "https://raw.githubusercontent.com/anonimouche-Dev/Media/b22af42cdbfe8d390b9d96270d42b4d34da0492c/";
 
-    public static string heroName;
+    private string heroName;
 
-    History? tellStory;
-    List<History> stories = UpdateStories(defaultLanguage);
-    // Method to handle language selection change
-    void OnSelectLangageChanged(ChangeEventArgs e)
+    private History tellStory;
+    private List<History> stories = new List<History>();
+
+    protected override void OnInitialized()
     {
-        Console.WriteLine("OnSelectLangageChanged tttt");
-        SelectLangage = e?.Value is null ? defaultLanguage : e!.Value!.ToString();
-        UpdateStories(SelectLangage);
-        StateHasChanged();
+        var storedName = RecupererNomSauve();
+        if (!string.IsNullOrEmpty(storedName))
+            heroName = storedName;
+
+        stories = UpdateStories(SelectLangage);
     }
-        // Method to update stories based on language selection
-        public static List<History> UpdateStories(string language)
+
+    private List<History> UpdateStories(string language)
+    {
+        if (language == "FR")
         {
-        Console.WriteLine("UpdateStories " + language);
-            if (language == "EN")
-            {
-                return new List<History>() {
-                new History("The Cake", picturePath + "cake-1914463_1280.jpg", $"Alert! Alert! A cake has been stolen! A hero appeared. The name of the hero was {heroName}. They caught the thief. The baker expressed his gratitude to {heroName}. The cakes were collected and eaten. A cake was offered to {heroName}. MIAM MIAM exclaimed {heroName}."),
-                new History("The Abandoned Dog", picturePath + "chihuahua-3988105_1280.jpg", $"One day, {heroName} found an abandoned dog by the roadside. Determined to give it a new life, {heroName} adopted it and named it Mambo. Together, they embarked on numerous adventures and became the best of friends.")
-            };
-            }
-             else
-            {
-                return new List<History>() {
+            return new List<History>() {
                 new History("Le Gâteau", picturePath + "cake-1914463_1280.jpg", $"Alerte ! Alerte ! Un gâteau a été volé ! Un héros est apparu. Le nom du héros était {heroName}. Ils ont attrapé le voleur. Le boulanger a exprimé sa gratitude à {heroName}. Les gâteaux ont été collectés et mangés. Un gâteau a été offert à {heroName}. MIAM MIAM s'est exclamé {heroName}."),
                 new History("Le Chien Abandonné", picturePath + "chihuahua-3988105_1280.jpg", $"Un jour, {heroName} a trouvé un chien abandonné au bord de la route. Déterminé à lui donner une nouvelle vie, {heroName} l'a adopté et l'a nommé Mambo. Ensemble, ils se sont lancés dans de nombreuses aventures et sont devenus les meilleurs amis.")
-             };
-             }
-
+            };
         }
+        else
+        {
+            return new List<History>() {
+                new History("The Cake", picturePath + "cake-1914463_1280.jpg", $"Alert! Alert! A cake has been stolen! A hero appeared. The name of the hero was {heroName}. They caught the thief. The baker expressed his gratitude to {heroName}. The cakes were collected and eaten. A cake was offered to {heroName}. MIAM MIAM exclaimed {heroName}."),
+                new History("The Abandoned Dog", picturePath + "chihuahua-3988105_1280.jpg", $"Once upon a time, a little dog named Bella lived in a peaceful village. One day, she got lost and found herself alone and scared in a dense forest. Fortunately, a kind hero named {heroName} appeared and heard Bella's plaintive barking.")
+            };
+        }
+    }
 
-    async Task EnregistrerDonnées()
+    private void OnSelectLangageChanged(ChangeEventArgs e)
     {
-        string path = "UserData.txt";
-        string data = $"name=\"{heroName}\" language=\"{SelectLangage}\"";
+        SelectLangage = e.Value.ToString();
+        stories = UpdateStories(SelectLangage);
+        StateHasChanged();
+    }
 
+    private string GetPlaceholderText() => SelectLangage == "FR" ? "Entrez votre nom" : "Enter your name";
+    private string GetGreetingText() => SelectLangage == "FR" ? $"Bonjour {heroName}" : $"Hello {heroName}";
+    private string GetButtonText() => SelectLangage == "FR" ? "Lire une autre histoire" : "Read another story";
+
+    private async Task ToggleTheme(ChangeEventArgs e)
+    {
+        bool isDarkMode = (bool)e.Value;
+        if (isDarkMode)
+            await JS.InvokeVoidAsync("toggleTheme", "dark-mode");
+        else
+            await JS.InvokeVoidAsync("toggleTheme", "");
+    }
+
+    private void SaveHeroName()
+    {
+        string cheminFichier = "options.txt";
+        string contenu = $"Name={heroName}";
+        File.WriteAllText(cheminFichier, contenu);
+    }
+
+    private IEnumerable<History> FilteredStories() =>
+        string.IsNullOrWhiteSpace(searchQuery) ? stories : stories.Where(s => s.Title.Contains(searchQuery, StringComparison.OrdinalIgnoreCase));
+
+    private string RecupererNomSauve()
+    {
         try
         {
-            if (!File.Exists(path))
-            {
-                using (FileStream fs = File.Create(path)) { }
-            }
+            string cheminFichier = "options.txt";
+            string paramNom = "Name=";
+            if (!File.Exists(cheminFichier))
+                return string.Empty;
 
-            await File.WriteAllTextAsync(path, data);
+            string ligneNom = File.ReadLines(cheminFichier)
+                                   .FirstOrDefault(ligne => ligne.StartsWith(paramNom));
+            if (string.IsNullOrEmpty(ligneNom))
+                return string.Empty;
 
-            
+            return ligneNom[paramNom.Length..];
         }
         catch (Exception ex)
         {
-           
+            Console.WriteLine($"Une erreur s'est produite lors de la lecture du fichier : {ex.Message}");
+            return string.Empty;
         }
     }
-
-
-
-    }
-
-
+}
