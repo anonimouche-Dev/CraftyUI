@@ -1,55 +1,25 @@
-﻿@page "/Story"
-@using System.IO
+﻿@page "/"
 @inject IJSRuntime JS
 
-<h1>Story</h1>
 
-@if (string.IsNullOrWhiteSpace(heroName))
-{
-    <div class="language-selection">
-        <select @onchange="OnSelectLangageChanged" id="SelectLangage">
-            <option value="EN">English</option>
-            <option value="FR">Français</option>
-        </select>
-        <input id="hero-name-input" type="text" @bind="@heroName" placeholder="@GetPlaceholderText()" />
-        <button @onclick="SaveHeroName">Valider</button>
-    </div>
-}
-else
-{
-    <div class="main-container">
-        <input type="text" @bind="searchQuery" placeholder="Search stories..." />
-        @if (tellStory is null)
-        {
-            <div class="story-container">
-                <h3>@GetGreetingText()</h3>
-                @foreach (var story in FilteredStories())
-                {
-                    <div class="story-card" @onclick="(() => tellStory = story)">
-                        <div class="image-container">
-                            <img alt="@story.Title" src="@story.Picture">
-                        </div>
-                        <div class="text-container">
-                            <h2>@story.Title</h2>
-                        </div>
-                    </div>
-                }
-            </div>
-        }
-        else
-        {
-            <div class="story-modal">
-                <h4>@tellStory.Title</h4>
-                <p>@tellStory.Content</p>
-                <button @onclick="(() => tellStory = null)">@GetButtonText()</button>
-            </div>
-        }
-    </div>
-}
+
+<div class="container">
+    <header>
+        <h1>CodeCraft_UX</h1>
+        <p>Welcome to CodeCraft_UX app.</p>
+        <div class="build-number">Build: @BuildNumber</div>
+    </header>
+
+
+    <form method="post" asp-controller="Account" asp-action="LoginWithGoogle">
+        <button type="submit" class="btn-google">Se connecter avec son email ou nom d'utilisateur</button>
+    </form>
+    <div class="development-notice">En cours de développement</div>
+</div>
 
 <div class="theme-switch">
     <label>
-        <input type="checkbox" @onchange="ToggleTheme" />
+        <input type="checkbox" @onchange="ToggleTheme" checked="@IsDarkMode" />
         Dark Mode
     </label>
 </div>
@@ -158,100 +128,8 @@ else
         margin-left: 10px;
     }
 
-    .main-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .story-container {
-        width: 100%;
-    }
-
-    .story-card {
-        border: 1px solid;
-        border-radius: 10px;
-        padding: 10px;
-        margin: 5px;
-        width: calc(50% - 10px);
-        display: flex;
-        flex-direction: row;
-        transition: transform 0.3s;
-        cursor: pointer;
-    }
-
-    .image-container {
-        width: 50%;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-    }
-
-    .text-container {
-        width: 50%;
-        padding: 0 10px;
-    }
-
-    h2 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-
-    p {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    .story-modal {
-        background-color: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        max-width: 80%;
-        margin: auto;
-        margin-top: 50px;
-    }
-
-        .story-modal h4 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-
-        .story-modal button {
-            background-color: orange;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-            .story-modal button:hover {
-                background-color: darkorange;
-            }
-
-    .language-selection {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-        .language-selection input {
-            margin-left: 10px;
-        }
-
-    .story-card:hover {
-        transform: scale(1.05);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    .hero-greeting {
+        margin-top: 20px;
     }
 
     /* Dark Mode Styles */
@@ -262,112 +140,83 @@ else
         --header-color: var(--header-color-dark);
         --subtext-color: var(--subtext-color-dark);
     }
-
-    .dark-mode .story-modal {
-        background-color: #333;
-        color: #fff;
-    }
-
-        .dark-mode .story-modal h4 {
-            color: #fff;
-        }
-
-        .dark-mode .story-modal button {
-            background-color: #ff9800;
-        }
 </style>
+
+<script>
+    function toggleTheme(isDarkMode) {
+        if (isDarkMode) {
+            document.body.classList.add('dark-mode');
+        } else {
+            document.body.classList.remove('dark-mode');
+        }
+    }
+</script>
 
 @code {
     private const string defaultLanguage = "EN";
     private string SelectLangage = defaultLanguage;
-    private string searchQuery = string.Empty;
-
-    public record History(string Title, string Picture, string Content);
-
-    static string picturePath = "https://raw.githubusercontent.com/anonimouche-Dev/Media/b22af42cdbfe8d390b9d96270d42b4d34da0492c/";
-
     private string heroName;
+    private string BuildNumber { get; set; }
+    private bool IsDarkMode { get; set; }
 
-    private History tellStory;
-    private List<History> stories = new List<History>();
+  
 
-    protected override void OnInitialized()
-    {
-        var storedName = RecupererNomSauve();
-        if (!string.IsNullOrEmpty(storedName))
-            heroName = storedName;
-
-        stories = UpdateStories(SelectLangage);
-    }
-
-    private List<History> UpdateStories(string language)
-    {
-        if (language == "FR")
-        {
-            return new List<History>() {
-                new History("Le Gâteau", picturePath + "cake-1914463_1280.jpg", $"Alerte ! Alerte ! Un gâteau a été volé ! Un héros est apparu. Le nom du héros était {heroName}. Ils ont attrapé le voleur. Le boulanger a exprimé sa gratitude à {heroName}. Les gâteaux ont été collectés et mangés. Un gâteau a été offert à {heroName}. MIAM MIAM s'est exclamé {heroName}."),
-                new History("Le Chien Abandonné", picturePath + "chihuahua-3988105_1280.jpg", $"Un jour, {heroName} a trouvé un chien abandonné au bord de la route. Déterminé à lui donner une nouvelle vie, {heroName} l'a adopté et l'a nommé Mambo. Ensemble, ils se sont lancés dans de nombreuses aventures et sont devenus les meilleurs amis.")
-            };
-        }
-        else
-        {
-            return new List<History>() {
-                new History("The Cake", picturePath + "cake-1914463_1280.jpg", $"Alert! Alert! A cake has been stolen! A hero appeared. The name of the hero was {heroName}. They caught the thief. The baker expressed his gratitude to {heroName}. The cakes were collected and eaten. A cake was offered to {heroName}. MIAM MIAM exclaimed {heroName}."),
-                new History("The Abandoned Dog", picturePath + "chihuahua-3988105_1280.jpg", $"Once upon a time, a little dog named Bella lived in a peaceful village. One day, she got lost and found herself alone and scared in a dense forest. Fortunately, a kind hero named {heroName} appeared and heard Bella's plaintive barking.")
-            };
-        }
-    }
+    private string GetPlaceholderText() => SelectLangage == "FR" ? "Entrez le nom du héros" : "Enter hero's name";
+    private string GetGreetingText() => SelectLangage == "FR" ? $"Bonjour, {heroName}!" : $"Hello, {heroName}!";
 
     private void OnSelectLangageChanged(ChangeEventArgs e)
     {
-        SelectLangage = e.Value.ToString();
-        stories = UpdateStories(SelectLangage);
-        StateHasChanged();
-    }
-
-    private string GetPlaceholderText() => SelectLangage == "FR" ? "Entrez votre nom" : "Enter your name";
-    private string GetGreetingText() => SelectLangage == "FR" ? $"Bonjour {heroName}" : $"Hello {heroName}";
-    private string GetButtonText() => SelectLangage == "FR" ? "Lire une autre histoire" : "Read another story";
-
-    private async Task ToggleTheme(ChangeEventArgs e)
-    {
-        bool isDarkMode = (bool)e.Value;
-        if (isDarkMode)
-            await JS.InvokeVoidAsync("toggleTheme", "dark-mode");
-        else
-            await JS.InvokeVoidAsync("toggleTheme", "");
+        SelectLangage = e.Value?.ToString() ?? defaultLanguage;
     }
 
     private void SaveHeroName()
     {
-        string cheminFichier = "options.txt";
-        string contenu = $"Name={heroName}";
-        File.WriteAllText(cheminFichier, contenu);
+        SauverNom(heroName);
     }
 
-    private IEnumerable<History> FilteredStories() =>
-        string.IsNullOrWhiteSpace(searchQuery) ? stories : stories.Where(s => s.Title.Contains(searchQuery, StringComparison.OrdinalIgnoreCase));
-
-    private string RecupererNomSauve()
+    public void SauverNom(string nom)
     {
-        try
-        {
-            string cheminFichier = "options.txt";
-            string paramNom = "Name=";
-            if (!File.Exists(cheminFichier))
-                return string.Empty;
+        var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "heroname.txt");
+        File.WriteAllText(path, nom);
+    }
 
-            string ligneNom = File.ReadLines(cheminFichier)
-                                   .FirstOrDefault(ligne => ligne.StartsWith(paramNom));
-            if (string.IsNullOrEmpty(ligneNom))
-                return string.Empty;
-
-            return ligneNom[paramNom.Length..];
-        }
-        catch (Exception ex)
+    public string RecupererNomSauve()
+    {
+        var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "heroname.txt");
+        if (File.Exists(path))
         {
-            Console.WriteLine($"Une erreur s'est produite lors de la lecture du fichier : {ex.Message}");
-            return string.Empty;
+            return File.ReadAllText(path);
         }
+        return string.Empty;
+    }
+
+    private async Task ToggleTheme(ChangeEventArgs e)
+    {
+        IsDarkMode = (bool)e.Value;
+        await JS.InvokeVoidAsync("toggleTheme", IsDarkMode);
+        SauverDarkMode(IsDarkMode);
+    }
+
+    public void SauverDarkMode(bool isDarkMode)
+    {
+        var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "userprefs.txt");
+        var prefs = new Dictionary<string, string> { { "darkmode", isDarkMode.ToString() } };
+        File.WriteAllLines(path, prefs.Select(kvp => $"{kvp.Key}={kvp.Value}"));
+    }
+
+    public bool RecupererDarkMode()
+    {
+        var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "userprefs.txt");
+        if (File.Exists(path))
+        {
+            var prefs = File.ReadAllLines(path)
+                            .Select(line => line.Split('='))
+                            .ToDictionary(parts => parts[0], parts => parts[1]);
+            if (prefs.TryGetValue("darkmode", out var isDarkModeStr) && bool.TryParse(isDarkModeStr, out var isDarkMode))
+            {
+                return isDarkMode;
+            }
+        }
+        return false;
     }
 }
