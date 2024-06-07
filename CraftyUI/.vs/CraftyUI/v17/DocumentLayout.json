@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\git\\CraftyUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED12544-031C-4A0C-95E2-B877F6CD6F4C}|CraftyUI\\CraftyUI.csproj|c:\\git\\craftyui\\craftyui\\components\\pages\\story.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4ED12544-031C-4A0C-95E2-B877F6CD6F4C}|CraftyUI\\CraftyUI.csproj|solutionrelative:craftyui\\components\\pages\\story.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED12544-031C-4A0C-95E2-B877F6CD6F4C}|CraftyUI\\CraftyUI.csproj|c:\\git\\craftyui\\craftyui\\components\\pages\\game.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4ED12544-031C-4A0C-95E2-B877F6CD6F4C}|CraftyUI\\CraftyUI.csproj|solutionrelative:craftyui\\components\\pages\\game.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED12544-031C-4A0C-95E2-B877F6CD6F4C}|CraftyUI\\CraftyUI.csproj|c:\\git\\craftyui\\craftyui\\components\\pages\\home .razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4ED12544-031C-4A0C-95E2-B877F6CD6F4C}|CraftyUI\\CraftyUI.csproj|solutionrelative:craftyui\\components\\pages\\home .razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED12544-031C-4A0C-95E2-B877F6CD6F4C}|CraftyUI\\CraftyUI.csproj|c:\\git\\craftyui\\craftyui\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4ED12544-031C-4A0C-95E2-B877F6CD6F4C}|CraftyUI\\CraftyUI.csproj|solutionrelative:craftyui\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GAME.razor",
+              "DocumentMoniker": "C:\\git\\CraftyUI\\CraftyUI\\Components\\Pages\\GAME.razor",
+              "RelativeDocumentMoniker": "CraftyUI\\Components\\Pages\\GAME.razor",
+              "ToolTip": "C:\\git\\CraftyUI\\CraftyUI\\Components\\Pages\\GAME.razor",
+              "RelativeToolTip": "CraftyUI\\Components\\Pages\\GAME.razor",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T14:27:14.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Story.razor",
+              "DocumentMoniker": "C:\\git\\CraftyUI\\CraftyUI\\Components\\Pages\\Story.razor",
+              "RelativeDocumentMoniker": "CraftyUI\\Components\\Pages\\Story.razor",
+              "ToolTip": "C:\\git\\CraftyUI\\CraftyUI\\Components\\Pages\\Story.razor",
+              "RelativeToolTip": "CraftyUI\\Components\\Pages\\Story.razor",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T14:27:11.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home .razor",
+              "DocumentMoniker": "C:\\git\\CraftyUI\\CraftyUI\\Components\\Pages\\Home .razor",
+              "RelativeDocumentMoniker": "CraftyUI\\Components\\Pages\\Home .razor",
+              "ToolTip": "C:\\git\\CraftyUI\\CraftyUI\\Components\\Pages\\Home .razor",
+              "RelativeToolTip": "CraftyUI\\Components\\Pages\\Home .razor",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T14:19:58.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\git\\CraftyUI\\CraftyUI\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "CraftyUI\\Components\\_Imports.razor",
+              "ToolTip": "C:\\git\\CraftyUI\\CraftyUI\\Components\\_Imports.razor",
+              "RelativeToolTip": "CraftyUI\\Components\\_Imports.razor",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T14:20:24.44Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

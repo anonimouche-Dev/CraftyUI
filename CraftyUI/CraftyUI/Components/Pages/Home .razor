@@ -1,0 +1,67 @@
+﻿@page "/"
+
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
+
+<style>
+
+
+
+
+
+    p {
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 2rem;
+    }
+
+    .build-number {
+        font-size: 0.9rem;
+        color: #aaa;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-google {
+        display: inline-block;
+        background-color: #4285f4;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-google:hover {
+            background-color: #357ae8;
+        }
+
+    .development-notice {
+        font-size: 0.9rem;
+        color: #ff9800;
+        margin-top: 2rem;
+    }
+</style>
+
+<div class="container">
+    <header>
+        <h1>CodeCraft_UX</h1>
+        <p>Welcome to CodeCraft_UX app.</p>
+        <div class="build-number">Build: @BuildNumber</div>
+    </header>
+
+    <form method="post" asp-controller="Account" asp-action="LoginWithGoogle">
+        <button type="submit" class="btn-google">Se connecter avec Google</button>
+    </form>
+
+    <div class="development-notice">En cours de développement</div>
+</div>
+
+@code {
+    private string BuildNumber { get; set; }
+
+    protected override void OnInitialized()
+    {
+        // Chargement du numéro de build à partir de la configuration
+        BuildNumber = Configuration["BuildNumber"];
+    }
+}

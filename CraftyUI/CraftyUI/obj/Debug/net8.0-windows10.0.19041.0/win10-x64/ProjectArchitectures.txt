@@ -1,0 +1,1 @@
+C:\git\CraftyUI\CraftyUI\CraftyUI.csproj;x64

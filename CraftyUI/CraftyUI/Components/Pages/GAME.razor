@@ -1,0 +1,315 @@
+﻿ @page "/game"
+@using Microsoft.AspNetCore.Components.Web
+@implements IDisposable
+
+<h3>Pikmin Run!</h3>
+<h5>en cour de devlelopement / ender developement </h5>
+@if (!gameOver)
+{
+    <div id="gameContainer" @onkeydown="HandleKeyDown" @onkeyup="HandleKeyUp" tabindex="0">
+        <img id="pikmin" src="https://raw.githubusercontent.com/anonimouche-Dev/Media/a7bbe35d9f7124139e8dc2cfc13ae006b4b507d9/1200px-Yellow_Pikmin.png" style="position: absolute; bottom: @(isSquatting ? 0 : pikminPositionY)px; left: 50px; width: 50px; height: @(isSquatting ? 25 : 50)px;" />
+        @foreach (var coin in coins)
+        {
+            <div class="coin" style="left: @(coin.Position)px;"></div>
+        }
+        @foreach (var obstacle in obstacles)
+        {
+            <div class="obstacle" style="left: @(obstacle.Position)px; height: @(obstacle.Height * 10)px; background-color: @(obstacle.Color);"></div>
+        }
+    </div>
+    <div>Coins: @coinCount</div>
+    <div>Score: @score</div>
+    <div>High Score: @highScore</div>
+}
+else
+{
+    <div id="gameOverScreen">
+        <h1>Game Over</h1>
+        <button @onclick="Respawn">Respawn</button>
+        <button @onclick="Quit">Quit</button>
+    </div>
+}
+
+<style>
+    #gameContainer {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        border: 1px solid black;
+        overflow: hidden;
+        background-color: #f0f0f0;
+    }
+
+    .coin {
+        position: absolute;
+        bottom: 0;
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+    }
+
+    .obstacle {
+        position: absolute;
+        bottom: 0;
+        width: 30px;
+    }
+
+    #gameOverScreen {
+        text-align: center;
+        margin-top: 100px;
+    }
+</style>
+
+@code {
+    private const int PikminJumpHeight = 15;
+    private const int SpeedIncrementInterval = 2000;
+    private const int InitialSpeed = 5;
+    private const int CoinSpawnInterval = 2000;
+    private const int ObstacleSpawnInterval = 3000;
+    private const int Gravity = 1;
+    private static readonly int[] ObstacleHeights = { 1, 2, 3, 4 };
+    private static readonly string[] ObstacleColors = { "green", "red", "blue", "purple" };
+
+    private bool isJumping = false;
+    private bool isSquatting = false;
+    private double pikminPositionY = 0;
+    private double jumpVelocity = 0;
+    private bool gameOver = false;
+    private int coinCount = 0;
+    private int score = 0;
+    private int highScore = 0;
+    private int gameSpeed = InitialSpeed;
+    private List<Block> coins = new List<Block>();
+    private List<Obstacle> obstacles = new List<Obstacle>();
+    private System.Timers.Timer gameTimer;
+    private System.Timers.Timer coinSpawnTimer;
+    private System.Timers.Timer obstacleSpawnTimer;
+    private System.Timers.Timer speedIncreaseTimer;
+    private System.Timers.Timer scoreTimer;
+    private Random random = new Random();
+    private string backgroundMusic = "background.mp3";
+
+    protected override void OnInitialized()
+    {
+        gameTimer = new System.Timers.Timer(50);
+        gameTimer.Elapsed += GameLoop;
+        gameTimer.Start();
+
+        coinSpawnTimer = new System.Timers.Timer(CoinSpawnInterval);
+        coinSpawnTimer.Elapsed += SpawnCoin;
+        coinSpawnTimer.Start();
+
+        obstacleSpawnTimer = new System.Timers.Timer(ObstacleSpawnInterval);
+        obstacleSpawnTimer.Elapsed += SpawnObstacle;
+        obstacleSpawnTimer.Start();
+
+        speedIncreaseTimer = new System.Timers.Timer(SpeedIncrementInterval);
+        speedIncreaseTimer.Elapsed += IncreaseSpeed;
+        speedIncreaseTimer.Start();
+
+        scoreTimer = new System.Timers.Timer(1000);
+        scoreTimer.Elapsed += UpdateScore;
+        scoreTimer.Start();
+        
+        // Play background music
+        PlayBackgroundMusic();
+    }
+
+    private void PlayBackgroundMusic()
+    {
+        // Implement background music play logic
+        // This might require JavaScript interop to play audio in a Blazor app
+        //JSRuntime.InvokeVoidAsync("playBackgroundMusic", backgroundMusic);
+    }
+
+    private void GameLoop(object sender, System.Timers.ElapsedEventArgs e)
+    {
+        InvokeAsync(() =>
+        {
+            if (isJumping)
+            {
+                pikminPositionY += jumpVelocity;
+                jumpVelocity -= Gravity;
+                if (pikminPositionY <= 0)
+                {
+                    pikminPositionY = 0;
+                    isJumping = false;
+                }
+            }
+
+            // Update coin positions
+            foreach (var coin in coins)
+            {
+                coin.Position -= gameSpeed;
+            }
+
+            // Update obstacle positions
+            foreach (var obstacle in obstacles)
+            {
+                obstacle.Position -= gameSpeed;
+            }
+
+            // Remove coins and obstacles that are out of view
+            coins.RemoveAll(coin => coin.Position < -30);
+            obstacles.RemoveAll(obstacle => obstacle.Position < -30);
+
+            CheckCollision();
+
+            StateHasChanged();
+        });
+    }
+
+    private void SpawnCoin(object sender, System.Timers.ElapsedEventArgs e)
+    {
+        var coin = new Block
+        {
+            Position = 800 + random.Next(0, 200)
+        };
+        coins.Add(coin);
+    }
+
+    private void SpawnObstacle(object sender, System.Timers.ElapsedEventArgs e)
+    {
+        var obstacle = new Obstacle
+        {
+            Position = 800 + random.Next(0, 200),
+            Height = ObstacleHeights[random.Next(ObstacleHeights.Length)],
+            Color = ObstacleColors[random.Next(ObstacleColors.Length)]
+        };
+        obstacles.Add(obstacle);
+    }
+
+    private void IncreaseSpeed(object sender, System.Timers.ElapsedEventArgs e)
+    {
+        gameSpeed++;
+    }
+
+    private void UpdateScore(object sender, System.Timers.ElapsedEventArgs e)
+    {
+        if (!gameOver)
+        {
+            score++;
+        }
+    }
+
+    private void CheckCollision()
+    {
+        foreach (var coin in coins)
+        {
+            if (coin.Position <= 100 && coin.Position >= 50 && pikminPositionY < 30)
+            {
+                coinCount++;
+                coins.Remove(coin);
+                score += 10;
+                break;
+            }
+        }
+
+        foreach (var obstacle in obstacles)
+        {
+            if (obstacle.Position <= 100 && obstacle.Position >= 50 && pikminPositionY < obstacle.Height * 10)
+            {
+                gameOver = true;
+                gameTimer.Stop();
+                coinSpawnTimer.Stop();
+                obstacleSpawnTimer.Stop();
+                speedIncreaseTimer.Stop();
+                scoreTimer.Stop();
+                if (score > highScore)
+                {
+                    highScore = score;
+                }
+            }
+        }
+    }
+
+    private void HandleKeyDown(KeyboardEventArgs e)
+    {
+        if (e.Key == " " && !isJumping && !isSquatting)
+        {
+            isJumping = true;
+            jumpVelocity = PikminJumpHeight;
+        }
+        else if (e.Key == "ArrowDown")
+        {
+            isSquatting = true;
+        }
+        else if (e.Key == "p")
+        {
+            PauseGame();
+        }
+    }
+
+    private void HandleKeyUp(KeyboardEventArgs e)
+    {
+        if (e.Key == "ArrowDown")
+        {
+            isSquatting = false;
+        }
+    }
+
+    private void Respawn()
+    {
+        pikminPositionY = 0;
+        jumpVelocity = 0;
+        isJumping = false;
+        isSquatting = false;
+        gameOver = false;
+        coinCount = 0;
+        score = 0;
+        coins.Clear();
+        obstacles.Clear();
+        gameSpeed = InitialSpeed;
+        gameTimer.Start();
+        coinSpawnTimer.Start();
+        obstacleSpawnTimer.Start();
+        speedIncreaseTimer.Start();
+        scoreTimer.Start();
+        PlayBackgroundMusic();
+    }
+
+    private void Quit()
+    {
+        // Implement quit functionality (e.g., navigate to another page or close the game)
+    }
+
+    private void PauseGame()
+    {
+        if (gameTimer.Enabled)
+        {
+            gameTimer.Stop();
+            coinSpawnTimer.Stop();
+            obstacleSpawnTimer.Stop();
+            speedIncreaseTimer.Stop();
+            scoreTimer.Stop();
+        }
+        else
+        {
+            gameTimer.Start();
+            coinSpawnTimer.Start();
+            obstacleSpawnTimer.Start();
+            speedIncreaseTimer.Start();
+            scoreTimer.Start();
+        }
+    }
+
+    public void Dispose()
+    {
+        gameTimer?.Dispose();
+        coinSpawnTimer?.Dispose();
+        obstacleSpawnTimer?.Dispose();
+        speedIncreaseTimer?.Dispose();
+        scoreTimer?.Dispose();
+    }
+
+    private class Block
+    {
+        public double Position { get; set; }
+        public int Height { get; set; } = 3; // Default height for blocks
+    }
+
+    private class Obstacle : Block
+    {
+        public string Color { get; set; }
+    }
+}
