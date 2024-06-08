@@ -45086,11 +45086,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\CraftyUI\\CraftyUI\\CraftyUI.csproj",
+      "projectUniqueName": "C:\\git\\CodeCraftUX\\CraftyUI\\CraftyUI\\CraftyUI.csproj",
       "projectName": "CraftyUI",
-      "projectPath": "C:\\git\\CraftyUI\\CraftyUI\\CraftyUI.csproj",
+      "projectPath": "C:\\git\\CodeCraftUX\\CraftyUI\\CraftyUI\\CraftyUI.csproj",
       "packagesPath": "C:\\Users\\natha\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\CraftyUI\\CraftyUI\\obj\\",
+      "outputPath": "C:\\git\\CodeCraftUX\\CraftyUI\\CraftyUI\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

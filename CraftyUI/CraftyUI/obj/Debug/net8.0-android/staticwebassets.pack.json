@@ -1,27 +1,27 @@
 {
   "Files": [
     {
-      "Id": "C:\\git\\CraftyUI\\CraftyUI\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\CraftyUI.styles.css",
+      "Id": "C:\\git\\CodeCraftUX\\CraftyUI\\CraftyUI\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\CraftyUI.styles.css",
       "PackagePath": "staticwebassets\\CraftyUI.styles.css"
     },
     {
-      "Id": "C:\\git\\CraftyUI\\CraftyUI\\wwwroot\\css\\app.css",
+      "Id": "C:\\git\\CodeCraftUX\\CraftyUI\\CraftyUI\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\git\\CraftyUI\\CraftyUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\git\\CodeCraftUX\\CraftyUI\\CraftyUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\git\\CraftyUI\\CraftyUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\git\\CodeCraftUX\\CraftyUI\\CraftyUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\git\\CraftyUI\\CraftyUI\\wwwroot\\favicon.png",
+      "Id": "C:\\git\\CodeCraftUX\\CraftyUI\\CraftyUI\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\git\\CraftyUI\\CraftyUI\\wwwroot\\index.html",
+      "Id": "C:\\git\\CodeCraftUX\\CraftyUI\\CraftyUI\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {

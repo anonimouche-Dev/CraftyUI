@@ -3,22 +3,36 @@
 @inject IJSRuntime JS
 
 <h1>Story</h1>
+@if (heroName == "Rick Astley")
+{
 
+
+    <script>
+        function RickRoll() {
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+        }
+        RickRoll();
+    </script>
+
+}
+else 
 @if (string.IsNullOrWhiteSpace(heroName))
 {
   
         <input id="hero-name-input" type="text" @bind="@heroName" placeholder="@GetPlaceholderText()" />
         <button @onclick="SaveHeroName">Validate</button>
     
+    
+}
+else
+
+{
       <div class="language-selection">
         <select @onchange="OnSelectLanguageChanged" id="SelectLanguage">
             <option value="EN">English</option>
             <option value="FR">Français</option>
         </select>
     </div>
-}
-else
-{
     <div class="main-container">
         <input type="text" @bind="searchQuery" placeholder="Search stories..." />
         @if (selectedStory is null)
@@ -286,7 +300,7 @@ else
 
     public record StoryData(string Title, string Picture, string Content);
 
-    static string picturePath = "https://raw.githubusercontent.com/anonimouche-Dev/Media/b22af42cdbfe8d390b9d96270d42b4d34da0492c/";
+    
 
     private string heroName;
     private StoryData selectedStory;
@@ -307,16 +321,16 @@ else
         {
             return new List<StoryData>
             {
-                new StoryData("Le Gâteau", picturePath + "cake-1914463_1280.jpg", $"Alerte ! Alerte ! Un gâteau a été volé ! Un héros est apparu. Le nom du héros était {heroName}. Ils ont attrapé le voleur. Le boulanger a exprimé sa gratitude à {heroName}. Les gâteaux ont été collectés et mangés. Un gâteau a été offert à {heroName}. MIAM MIAM s'est exclamé {heroName}."),
-                new StoryData("Le Chien Abandonné", picturePath + "chihuahua-3988105_1280.jpg", $"Un jour, {heroName} a trouvé un chien abandonné au bord de la route. Déterminé à lui donner une nouvelle vie, {heroName} l'a adopté et l'a nommé Mambo. Ensemble, ils se sont lancés dans de nombreuses aventures et sont devenus les meilleurs amis.")
+                new StoryData("Le Gâteau", "https://raw.githubusercontent.com/anonimouche-Dev/Media/b22af42cdbfe8d390b9d96270d42b4d34da0492c/" + "cake-1914463_1280.jpg", $"Alerte ! Alerte ! Un gâteau a été volé ! Un héros est apparu. Le nom du héros était {heroName}. Ils ont attrapé le voleur. Le boulanger a exprimé sa gratitude à {heroName}. Les gâteaux ont été collectés et mangés. Un gâteau a été offert à {heroName}. MIAM MIAM s'est exclamé {heroName}."),
+                new StoryData("Le Chien Abandonné", "https://raw.githubusercontent.com/anonimouche-Dev/Media/b22af42cdbfe8d390b9d96270d42b4d34da0492c/" + "chihuahua-3988105_1280.jpg", $"Un jour, {heroName} a trouvé un chien abandonné au bord de la route. Déterminé à lui donner une nouvelle vie, {heroName} l'a adopté et l'a nommé Mambo. Ensemble, ils se sont lancés dans de nombreuses aventures et sont devenus les meilleurs amis.")
             };
         }
         else
         {
             return new List<StoryData>
             {
-                new StoryData("The Cake", picturePath + "cake-1914463_1280.jpg", $"Alert! Alert! A cake has been stolen! A hero appeared. The name of the hero was {heroName}. They caught the thief. The baker expressed his gratitude to {heroName}. The cakes were collected and eaten. A cake was offered to {heroName}. MIAM MIAM exclaimed {heroName}."),
-                new StoryData("The Abandoned Dog", picturePath + "chihuahua-3988105_1280.jpg", $"Once upon a time, a little dog named Bella lived in a peaceful village. One day, she got lost and found herself alone and scared in a dense forest. Fortunately, a kind hero named {heroName} appeared and heard Bella's plaintive barking.")
+                new StoryData("The Cake", "https://raw.githubusercontent.com/anonimouche-Dev/Media/b22af42cdbfe8d390b9d96270d42b4d34da0492c/" + "cake-1914463_1280.jpg", $"Alert! Alert! A cake has been stolen! A hero appeared. The name of the hero was {heroName}. They caught the thief. The baker expressed his gratitude to {heroName}. The cakes were collected and eaten. A cake was offered to {heroName}. MIAM MIAM exclaimed {heroName}."),
+                new StoryData("The Abandoned Dog", "https://raw.githubusercontent.com/anonimouche-Dev/Media/b22af42cdbfe8d390b9d96270d42b4d34da0492c/" + "chihuahua-3988105_1280.jpg", $"Once upon a time, a little dog named mambo lived in a peaceful village. One day, she got lost and found herself alone and scared in a dense forest. Fortunately, a kind hero named {heroName} appeared and heard mambo's plaintive barking.")
             };
         }
     }

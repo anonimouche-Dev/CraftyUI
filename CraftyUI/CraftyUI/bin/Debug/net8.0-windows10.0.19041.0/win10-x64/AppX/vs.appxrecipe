@@ -10,14 +10,14 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>com.companyname.craftyui</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\git\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>C:\git\CodeCraftUX\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>98050528CC6105772A875CBB4A43EBC0D9186DFD1E72E790A1807452871B374C</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>com.companyname.craftyui_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.companyname.craftyui_9zz4h110yvjzm!App</RegisteredUserModeAppID>
@@ -26,284 +26,284 @@
     <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\git\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-07T20:34:30.872</Modified>
+      <Modified>2024-06-08T20:07:13.390</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-07T20:18:10.826</Modified>
+      <Modified>2024-06-08T10:39:23.949</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CraftyUI.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CraftyUI.runtimeconfig.json">
       <PackagePath>CraftyUI.runtimeconfig.json</PackagePath>
-      <Modified>2024-06-02T14:20:57.874</Modified>
+      <Modified>2024-06-08T10:30:03.600</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CraftyUI.dll">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CraftyUI.dll">
       <PackagePath>CraftyUI.dll</PackagePath>
-      <Modified>2024-06-07T20:34:30.583</Modified>
+      <Modified>2024-06-08T20:07:12.093</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CraftyUI.exe</PackagePath>
-      <Modified>2024-06-07T20:34:30.588</Modified>
+      <Modified>2024-06-08T20:07:12.199</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
       <Modified>2024-06-02T14:18:24.649</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\wwwroot\css\app.css">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
       <Modified>2024-06-02T14:18:24.660</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\wwwroot\css\bootstrap\bootstrap.min.css">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\wwwroot\css\bootstrap\bootstrap.min.css">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css</PackagePath>
       <Modified>2024-06-02T14:18:24.662</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\wwwroot\css\bootstrap\bootstrap.min.css.map">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\wwwroot\css\bootstrap\bootstrap.min.css.map">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css.map</PackagePath>
       <Modified>2024-06-02T14:18:24.664</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\wwwroot\favicon.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\wwwroot\favicon.png">
       <PackagePath>wwwroot\favicon.png</PackagePath>
       <Modified>2024-06-02T14:18:24.655</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\wwwroot\index.html">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
       <Modified>2024-06-02T14:18:24.659</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
       <Modified>2024-06-02T14:19:16.044</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
       <Modified>2024-06-02T14:19:16.079</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
       <Modified>2024-06-02T14:19:16.119</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
       <Modified>2024-06-02T14:19:16.237</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
       <Modified>2024-06-02T14:19:16.642</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
       <Modified>2024-06-02T14:18:24.643</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
       <Modified>2024-06-02T14:19:19.510</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
       <Modified>2024-06-02T14:19:20.213</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
       <Modified>2024-06-02T14:19:20.241</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
       <Modified>2024-06-02T14:19:20.265</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
       <Modified>2024-06-02T14:19:20.306</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
       <Modified>2024-06-02T14:19:20.457</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
       <Modified>2024-06-02T14:19:19.746</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
       <Modified>2024-06-02T14:19:19.756</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
       <Modified>2024-06-02T14:19:19.798</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
       <Modified>2024-06-02T14:19:19.766</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
       <Modified>2024-06-02T14:19:19.776</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
       <Modified>2024-06-02T14:19:19.681</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
       <Modified>2024-06-02T14:19:19.693</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
       <Modified>2024-06-02T14:19:19.737</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
       <Modified>2024-06-02T14:19:19.702</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
       <Modified>2024-06-02T14:19:19.713</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
       <Modified>2024-06-02T14:19:19.550</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
       <Modified>2024-06-02T14:19:19.562</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
       <Modified>2024-06-02T14:19:19.575</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
       <Modified>2024-06-02T14:19:19.588</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
       <Modified>2024-06-02T14:19:19.605</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
       <Modified>2024-06-02T14:19:19.616</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
       <Modified>2024-06-02T14:19:19.628</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
       <Modified>2024-06-02T14:19:19.672</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
       <Modified>2024-06-02T14:19:19.638</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
       <Modified>2024-06-02T14:19:19.648</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
       <Modified>2024-06-02T14:19:19.937</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
       <Modified>2024-06-02T14:19:19.951</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
       <Modified>2024-06-02T14:19:19.969</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
       <Modified>2024-06-02T14:19:19.992</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
       <Modified>2024-06-02T14:19:20.032</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
       <Modified>2024-06-02T14:19:19.865</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
       <Modified>2024-06-02T14:19:19.875</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
       <Modified>2024-06-02T14:19:19.886</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
       <Modified>2024-06-02T14:19:19.898</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
       <Modified>2024-06-02T14:19:19.926</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
       <Modified>2024-06-02T14:19:19.807</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
       <Modified>2024-06-02T14:19:19.817</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
       <Modified>2024-06-02T14:19:19.828</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
       <Modified>2024-06-02T14:19:19.839</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
       <Modified>2024-06-02T14:19:19.855</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
       <Modified>2024-06-02T14:19:20.047</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
       <Modified>2024-06-02T14:19:20.064</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
       <Modified>2024-06-02T14:19:20.085</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
       <Modified>2024-06-02T14:19:20.115</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
       <Modified>2024-06-02T14:19:20.190</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
       <Modified>2024-06-02T14:19:19.619</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
       <Modified>2024-06-02T14:19:19.637</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
       <Modified>2024-06-02T14:19:19.657</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
       <Modified>2024-06-02T14:19:19.689</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
       <Modified>2024-06-02T14:19:19.764</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CraftyUI.deps.json">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CraftyUI.deps.json">
       <PackagePath>CraftyUI.deps.json</PackagePath>
-      <Modified>2024-06-07T20:18:10.433</Modified>
+      <Modified>2024-06-08T10:39:23.862</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -665,19 +665,19 @@
       <PackagePath>Microsoft.Maui.pri</PackagePath>
       <Modified>2024-04-18T23:19:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\CraftyUI.styles.css">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\CraftyUI.styles.css">
       <PackagePath>wwwroot\CraftyUI.styles.css</PackagePath>
       <Modified>2024-06-02T14:19:28.604</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\CraftyUI.bundle.scp.css">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\CraftyUI.bundle.scp.css">
       <PackagePath>wwwroot\CraftyUI.bundle.scp.css</PackagePath>
       <Modified>2024-06-02T14:19:28.609</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\Components\Layout\MainLayout.razor.css">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\Components\Layout\MainLayout.razor.css">
       <PackagePath>Components\Layout\MainLayout.razor.css</PackagePath>
       <Modified>2024-04-16T12:16:34.931</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\git\CraftyUI\CraftyUI\Components\Layout\NavMenu.razor.css">
+    <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\Components\Layout\NavMenu.razor.css">
       <PackagePath>Components\Layout\NavMenu.razor.css</PackagePath>
       <Modified>2024-04-16T12:16:34.937</Modified>
     </AppxPackagedFile>
