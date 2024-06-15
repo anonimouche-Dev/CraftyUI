@@ -14,6 +14,7 @@
 
 }
 else 
+
 @if (string.IsNullOrWhiteSpace(heroName))
 {
   
@@ -37,6 +38,14 @@ else
         {
             <div class="story-container">
                 <h3>@GetGreetingText()</h3>
+             <h3> 
+
+
+             </h3>
+              <h3> 
+
+
+             </h3>
                 @foreach (var story in FilteredStories())
                 {
                     <div class="story-card" @onclick="(() => selectedStory = story)">
@@ -61,12 +70,7 @@ else
     </div>
 }
 
-<div class="theme-switch">
-    <label>
-        <input type="checkbox" @onchange="ToggleTheme" />
-        Dark Mode
-    </label>
-</div>
+
 
 <style>
     :root {
@@ -129,9 +133,9 @@ else
         cursor: pointer;
     }
 
-        .btn-google:hover {
-            background-color: #357ae8;
-        }
+    .btn-google:hover {
+        background-color: #357ae8;
+    }
 
     .development-notice {
         font-size: 0.9rem;
@@ -155,14 +159,14 @@ else
         margin-left: 10px;
     }
 
-        #SelectLanguage option {
-            background-color: #fff;
-            color: black;
-        }
+    #SelectLanguage option {
+        background-color: #fff;
+        color: black;
+    }
 
-            #SelectLanguage option:hover {
-                background-color: #f0f0f0;
-            }
+    #SelectLanguage option:hover {
+        background-color: #f0f0f0;
+    }
 
     #hero-name-input {
         padding: 8px 12px;
@@ -179,6 +183,8 @@ else
     }
 
     .story-container {
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
     }
 
@@ -187,7 +193,7 @@ else
         border-radius: 10px;
         padding: 10px;
         margin: 5px;
-        width: calc(50% - 10px);
+        width: calc(50% - 20px); /* Adjust for margin */
         display: flex;
         flex-direction: row;
         transition: transform 0.3s;
@@ -231,27 +237,27 @@ else
         margin-top: 50px;
     }
 
-        .story-modal h4 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
+    .story-modal h4 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
 
-        .story-modal button {
-            background-color: orange;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+    .story-modal button {
+        background-color: orange;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
 
-            .story-modal button:hover {
-                background-color: darkorange;
-            }
+    .story-modal button:hover {
+        background-color: darkorange;
+    }
 
     .language-selection {
         display: flex;
@@ -259,9 +265,9 @@ else
         margin-bottom: 20px;
     }
 
-        .language-selection input {
-            margin-left: 10px;
-        }
+    .language-selection input {
+        margin-left: 10px;
+    }
 
     .story-card:hover {
         transform: scale(1.05);
@@ -282,14 +288,15 @@ else
         color: #fff;
     }
 
-        .dark-mode .story-modal h4 {
-            color: #fff;
-        }
+    .dark-mode .story-modal h4 {
+        color: #fff;
+    }
 
-        .dark-mode .story-modal button {
-            background-color: #ff9800;
-        }
+    .dark-mode .story-modal button {
+        background-color: #ff9800;
+    }
 </style>
+
 
 @code {
     private const string DefaultLanguage = "EN";
@@ -320,7 +327,6 @@ else
             return new List<StoryData>
             {
                 new StoryData("Le Gâteau", "https://raw.githubusercontent.com/anonimouche-Dev/Media/b22af42cdbfe8d390b9d96270d42b4d34da0492c/" + "cake-1914463_1280.jpg", $"Alerte ! Alerte ! Un gâteau a été volé ! Un héros est apparu. Le nom du héros était {heroName}. Ils ont attrapé le voleur. Le boulanger a exprimé sa gratitude à {heroName}. Les gâteaux ont été collectés et mangés. Un gâteau a été offert à {heroName}. MIAM MIAM s'est exclamé {heroName}."),
-              
 
                 new StoryData("Le Chien Abandonné", "https://raw.githubusercontent.com/anonimouche-Dev/Media/b22af42cdbfe8d390b9d96270d42b4d34da0492c/" + "chihuahua-3988105_1280.jpg", $"Un jour, {heroName} a trouvé un chien abandonné au bord de la route. Déterminé à lui donner une nouvelle vie, {heroName} l'a adopté et l'a nommé Mambo. Ensemble, ils se sont lancés dans de nombreuses aventures et sont devenus les meilleurs amis.")
             };
