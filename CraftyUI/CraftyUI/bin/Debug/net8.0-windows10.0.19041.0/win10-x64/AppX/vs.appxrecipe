@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-15T16:21:45.639</Modified>
+      <Modified>2024-06-15T17:05:51.015</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CraftyUI.dll">
       <PackagePath>CraftyUI.dll</PackagePath>
-      <Modified>2024-06-15T16:21:45.343</Modified>
+      <Modified>2024-06-15T17:05:50.624</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CraftyUI.exe</PackagePath>
-      <Modified>2024-06-15T16:21:45.351</Modified>
+      <Modified>2024-06-15T17:05:50.634</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
