@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-15T17:05:51.015</Modified>
+      <Modified>2024-06-17T15:50:34.680</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-08T10:39:23.949</Modified>
+      <Modified>2024-06-17T15:50:33.639</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CraftyUI.runtimeconfig.json">
       <PackagePath>CraftyUI.runtimeconfig.json</PackagePath>
-      <Modified>2024-06-08T10:30:03.600</Modified>
+      <Modified>2024-06-16T16:14:08.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CraftyUI.dll">
       <PackagePath>CraftyUI.dll</PackagePath>
-      <Modified>2024-06-15T17:05:50.624</Modified>
+      <Modified>2024-06-17T15:50:31.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CraftyUI.exe</PackagePath>
-      <Modified>2024-06-15T17:05:50.634</Modified>
+      <Modified>2024-06-17T15:50:31.810</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -67,7 +67,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\wwwroot\favicon.png">
       <PackagePath>wwwroot\favicon.png</PackagePath>
-      <Modified>2024-06-02T14:18:24.655</Modified>
+      <Modified>2024-05-20T12:11:13.278</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
@@ -303,7 +303,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CraftyUI.deps.json">
       <PackagePath>CraftyUI.deps.json</PackagePath>
-      <Modified>2024-06-08T10:39:23.862</Modified>
+      <Modified>2024-06-17T15:50:33.198</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -329,13 +329,17 @@
       <PackagePath>Microsoft.AspNetCore.Components.Web.dll</PackagePath>
       <Modified>2023-11-01T01:07:28.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.components.webassembly\8.0.0\lib\net8.0\Microsoft.AspNetCore.Components.WebAssembly.dll">
+      <PackagePath>Microsoft.AspNetCore.Components.WebAssembly.dll</PackagePath>
+      <Modified>2023-11-01T01:08:08.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.components.webview\8.0.0\lib\net8.0\Microsoft.AspNetCore.Components.WebView.dll">
       <PackagePath>Microsoft.AspNetCore.Components.WebView.dll</PackagePath>
       <Modified>2023-11-01T01:08:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.components.webview.maui\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.AspNetCore.Components.WebView.Maui.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.components.webview.maui\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.AspNetCore.Components.WebView.Maui.dll">
       <PackagePath>Microsoft.AspNetCore.Components.WebView.Maui.dll</PackagePath>
-      <Modified>2024-04-18T23:38:00.000</Modified>
+      <Modified>2024-05-13T18:30:20.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.metadata\8.0.0\lib\net8.0\Microsoft.AspNetCore.Metadata.dll">
       <PackagePath>Microsoft.AspNetCore.Metadata.dll</PackagePath>
@@ -417,33 +421,37 @@
       <PackagePath>Microsoft.JSInterop.dll</PackagePath>
       <Modified>2023-11-01T01:06:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.compatibility\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.jsinterop.webassembly\8.0.0\lib\net8.0\Microsoft.JSInterop.WebAssembly.dll">
+      <PackagePath>Microsoft.JSInterop.WebAssembly.dll</PackagePath>
+      <Modified>2023-11-01T01:07:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.compatibility\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.dll">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.dll</PackagePath>
-      <Modified>2024-04-18T23:37:10.000</Modified>
+      <Modified>2024-05-13T18:30:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.dll">
       <PackagePath>Microsoft.Maui.Controls.dll</PackagePath>
-      <Modified>2024-04-18T23:33:42.000</Modified>
+      <Modified>2024-05-13T18:28:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.xaml\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Xaml.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.xaml\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Xaml.dll">
       <PackagePath>Microsoft.Maui.Controls.Xaml.dll</PackagePath>
-      <Modified>2024-04-18T23:35:38.000</Modified>
+      <Modified>2024-05-13T18:28:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.core\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.core\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.dll">
       <PackagePath>Microsoft.Maui.dll</PackagePath>
-      <Modified>2024-04-18T23:34:06.000</Modified>
+      <Modified>2024-05-13T18:28:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.essentials\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Essentials.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.essentials\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Essentials.dll">
       <PackagePath>Microsoft.Maui.Essentials.dll</PackagePath>
-      <Modified>2024-04-18T23:36:22.000</Modified>
+      <Modified>2024-05-13T18:30:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.graphics\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.graphics\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.dll">
       <PackagePath>Microsoft.Maui.Graphics.dll</PackagePath>
-      <Modified>2024-04-18T23:34:14.000</Modified>
+      <Modified>2024-05-13T18:28:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
-      <Modified>2024-04-18T23:36:46.000</Modified>
+      <Modified>2024-05-13T18:30:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.windowsappsdk\1.5.240311000\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
@@ -509,141 +517,141 @@
       <PackagePath>System.IO.Pipelines.dll</PackagePath>
       <Modified>2023-10-31T14:59:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:12.000</Modified>
+      <Modified>2024-05-13T18:28:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\ca\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\ca\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ca\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:12.000</Modified>
+      <Modified>2024-05-13T18:28:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\cs\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\cs\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>cs\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:33:42.000</Modified>
+      <Modified>2024-05-13T18:28:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\da\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\da\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>da\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:33:46.000</Modified>
+      <Modified>2024-05-13T18:28:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\de\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\de\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>de\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:06.000</Modified>
+      <Modified>2024-05-13T18:28:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\el\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\el\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>el\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:06.000</Modified>
+      <Modified>2024-05-13T18:28:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\es\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\es\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>es\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:33:40.000</Modified>
+      <Modified>2024-05-13T18:28:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\fi\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\fi\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>fi\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:12.000</Modified>
+      <Modified>2024-05-13T18:28:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\fr\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\fr\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>fr\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:33:46.000</Modified>
+      <Modified>2024-05-13T18:28:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\he\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\he\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>he\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:36.000</Modified>
+      <Modified>2024-05-13T18:29:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\hi\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\hi\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>hi\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:16.000</Modified>
+      <Modified>2024-05-13T18:28:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\hr\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\hr\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>hr\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:33:46.000</Modified>
+      <Modified>2024-05-13T18:28:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\hu\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\hu\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>hu\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:33:46.000</Modified>
+      <Modified>2024-05-13T18:28:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\id\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\id\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>id\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:33:46.000</Modified>
+      <Modified>2024-05-13T18:28:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\it\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\it\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>it\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:16.000</Modified>
+      <Modified>2024-05-13T18:28:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\ja\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\ja\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ja\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:16.000</Modified>
+      <Modified>2024-05-13T18:28:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\ko\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\ko\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ko\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:33:46.000</Modified>
+      <Modified>2024-05-13T18:28:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\ms\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\ms\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ms\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:16.000</Modified>
+      <Modified>2024-05-13T18:28:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\nb\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\nb\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>nb\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:14.000</Modified>
+      <Modified>2024-05-13T18:28:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\nl\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\nl\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>nl\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:14.000</Modified>
+      <Modified>2024-05-13T18:28:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\pl\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\pl\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>pl\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:36.000</Modified>
+      <Modified>2024-05-13T18:28:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\pt-BR\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\pt-BR\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>pt-BR\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:33:44.000</Modified>
+      <Modified>2024-05-13T18:28:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\pt\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\pt\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>pt\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:14.000</Modified>
+      <Modified>2024-05-13T18:28:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\ro\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\ro\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ro\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:36.000</Modified>
+      <Modified>2024-05-13T18:28:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\ru\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\ru\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ru\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:16.000</Modified>
+      <Modified>2024-05-13T18:28:18.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\sk\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\sk\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>sk\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:14.000</Modified>
+      <Modified>2024-05-13T18:28:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\sv\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\sv\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>sv\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:16.000</Modified>
+      <Modified>2024-05-13T18:28:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\th\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\th\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>th\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:14.000</Modified>
+      <Modified>2024-05-13T18:28:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\tr\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\tr\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>tr\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:33:44.000</Modified>
+      <Modified>2024-05-13T18:28:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\uk\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\uk\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>uk\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:33:44.000</Modified>
+      <Modified>2024-05-13T18:27:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\vi\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\vi\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>vi\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:14.000</Modified>
+      <Modified>2024-05-13T18:28:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\zh-HK\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\zh-HK\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>zh-HK\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:33:44.000</Modified>
+      <Modified>2024-05-13T18:28:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\zh-Hans\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\zh-Hans\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>zh-Hans\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:16.000</Modified>
+      <Modified>2024-05-13T18:28:18.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\zh-Hant\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\zh-Hant\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>zh-Hant\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-04-18T23:34:12.000</Modified>
+      <Modified>2024-05-13T18:28:38.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.graphics.win2d\1.2.0\runtimes\win-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -653,17 +661,17 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2024-03-08T18:44:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.compatibility\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.compatibility\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
-      <Modified>2024-04-18T23:21:08.000</Modified>
+      <Modified>2024-05-13T18:12:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.pri">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.pri">
       <PackagePath>Microsoft.Maui.Controls.pri</PackagePath>
-      <Modified>2024-04-18T23:20:10.000</Modified>
+      <Modified>2024-05-13T18:12:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.core\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.core\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
-      <Modified>2024-04-18T23:19:32.000</Modified>
+      <Modified>2024-05-13T18:11:50.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\CraftyUI.styles.css">
       <PackagePath>wwwroot\CraftyUI.styles.css</PackagePath>

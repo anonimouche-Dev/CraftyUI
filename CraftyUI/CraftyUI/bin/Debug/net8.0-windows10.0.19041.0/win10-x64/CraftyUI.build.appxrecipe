@@ -235,6 +235,18 @@
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.authentication\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.dll">
+      <PackagePath>Microsoft.AspNetCore.Authentication.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.authentication.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Authentication.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.authentication.cookies\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Cookies.dll">
+      <PackagePath>Microsoft.AspNetCore.Authentication.Cookies.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.authentication.core\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Core.dll">
+      <PackagePath>Microsoft.AspNetCore.Authentication.Core.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.authorization\8.0.0\lib\net8.0\Microsoft.AspNetCore.Authorization.dll">
       <PackagePath>Microsoft.AspNetCore.Authorization.dll</PackagePath>
     </AppxPackagedFile>
@@ -247,14 +259,47 @@
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.components.web\8.0.0\lib\net8.0\Microsoft.AspNetCore.Components.Web.dll">
       <PackagePath>Microsoft.AspNetCore.Components.Web.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.components.webassembly\8.0.0\lib\net8.0\Microsoft.AspNetCore.Components.WebAssembly.dll">
+      <PackagePath>Microsoft.AspNetCore.Components.WebAssembly.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.components.webview\8.0.0\lib\net8.0\Microsoft.AspNetCore.Components.WebView.dll">
       <PackagePath>Microsoft.AspNetCore.Components.WebView.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.components.webview.maui\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.AspNetCore.Components.WebView.Maui.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.components.webview.maui\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.AspNetCore.Components.WebView.Maui.dll">
       <PackagePath>Microsoft.AspNetCore.Components.WebView.Maui.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.cryptography.internal\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Cryptography.Internal.dll">
+      <PackagePath>Microsoft.AspNetCore.Cryptography.Internal.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.dataprotection\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.DataProtection.dll">
+      <PackagePath>Microsoft.AspNetCore.DataProtection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.dataprotection.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.DataProtection.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.hosting.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Hosting.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.hosting.server.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.http\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.http.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.http.extensions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Extensions.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.http.features\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Features.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.metadata\8.0.0\lib\net8.0\Microsoft.AspNetCore.Metadata.dll">
       <PackagePath>Microsoft.AspNetCore.Metadata.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.aspnetcore.webutilities\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll">
+      <PackagePath>Microsoft.AspNetCore.WebUtilities.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
@@ -292,6 +337,9 @@
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.extensions.filesystemglobbing\8.0.0\lib\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll">
       <PackagePath>Microsoft.Extensions.FileSystemGlobbing.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.extensions.hosting.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Hosting.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.Hosting.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.extensions.logging\8.0.0\lib\net8.0\Microsoft.Extensions.Logging.dll">
       <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
     </AppxPackagedFile>
@@ -301,11 +349,17 @@
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.extensions.logging.debug\8.0.0\lib\net8.0\Microsoft.Extensions.Logging.Debug.dll">
       <PackagePath>Microsoft.Extensions.Logging.Debug.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.extensions.objectpool\2.2.0\lib\netstandard2.0\Microsoft.Extensions.ObjectPool.dll">
+      <PackagePath>Microsoft.Extensions.ObjectPool.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.extensions.options\8.0.0\lib\net8.0\Microsoft.Extensions.Options.dll">
       <PackagePath>Microsoft.Extensions.Options.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.extensions.primitives\8.0.0\lib\net8.0\Microsoft.Extensions.Primitives.dll">
       <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.extensions.webencoders\2.2.0\lib\netstandard2.0\Microsoft.Extensions.WebEncoders.dll">
+      <PackagePath>Microsoft.Extensions.WebEncoders.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.graphics.win2d\1.2.0\lib\net6.0-windows10.0.19041.0\Microsoft.Graphics.Canvas.Interop.dll">
       <PackagePath>Microsoft.Graphics.Canvas.Interop.dll</PackagePath>
@@ -313,26 +367,32 @@
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.jsinterop\8.0.0\lib\net8.0\Microsoft.JSInterop.dll">
       <PackagePath>Microsoft.JSInterop.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.compatibility\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.jsinterop.webassembly\8.0.0\lib\net8.0\Microsoft.JSInterop.WebAssembly.dll">
+      <PackagePath>Microsoft.JSInterop.WebAssembly.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.compatibility\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.dll">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.dll">
       <PackagePath>Microsoft.Maui.Controls.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.xaml\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Xaml.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.xaml\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Xaml.dll">
       <PackagePath>Microsoft.Maui.Controls.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.core\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.core\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.dll">
       <PackagePath>Microsoft.Maui.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.essentials\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Essentials.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.essentials\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Essentials.dll">
       <PackagePath>Microsoft.Maui.Essentials.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.graphics\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.graphics\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.dll">
       <PackagePath>Microsoft.Maui.Graphics.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.net.http.headers\2.2.0\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll">
+      <PackagePath>Microsoft.Net.Http.Headers.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.windowsappsdk\1.5.240311000\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
@@ -382,106 +442,115 @@
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\system.io.pipelines\8.0.0\lib\net8.0\System.IO.Pipelines.dll">
       <PackagePath>System.IO.Pipelines.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\system.security.cryptography.pkcs\4.5.0\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll">
+      <PackagePath>System.Security.Cryptography.Pkcs.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\system.security.cryptography.xml\4.5.0\lib\netstandard2.0\System.Security.Cryptography.Xml.dll">
+      <PackagePath>System.Security.Cryptography.Xml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\system.security.permissions\4.5.0\lib\netstandard2.0\System.Security.Permissions.dll">
+      <PackagePath>System.Security.Permissions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\ca\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\ca\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ca\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\cs\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\cs\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>cs\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\da\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\da\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>da\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\de\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\de\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>de\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\el\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\el\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>el\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\es\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\es\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>es\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\fi\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\fi\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>fi\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\fr\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\fr\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>fr\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\he\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\he\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>he\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\hi\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\hi\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>hi\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\hr\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\hr\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>hr\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\hu\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\hu\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>hu\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\id\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\id\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>id\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\it\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\it\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>it\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\ja\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\ja\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ja\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\ko\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\ko\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ko\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\ms\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\ms\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ms\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\nb\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\nb\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>nb\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\nl\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\nl\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>nl\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\pl\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\pl\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>pl\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\pt-BR\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\pt-BR\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>pt-BR\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\pt\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\pt\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>pt\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\ro\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\ro\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ro\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\ru\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\ru\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ru\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\sk\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\sk\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>sk\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\sv\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\sv\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>sv\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\th\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\th\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>th\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\tr\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\tr\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>tr\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\uk\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\uk\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>uk\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\vi\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\vi\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>vi\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\zh-HK\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\zh-HK\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>zh-HK\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\zh-Hans\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\zh-Hans\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>zh-Hans\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\zh-Hant\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\zh-Hant\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>zh-Hant\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.graphics.win2d\1.2.0\runtimes\win-x64\native\Microsoft.Graphics.Canvas.dll">
@@ -490,13 +559,13 @@
     <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.windowsappsdk\1.5.240311000\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.compatibility\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.compatibility\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.pri">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.controls.core\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.pri">
       <PackagePath>Microsoft.Maui.Controls.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.core\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
+    <AppxPackagedFile Include="C:\Users\natha\.nuget\packages\microsoft.maui.core\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\CodeCraftUX\CraftyUI\CraftyUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\CraftyUI.styles.css">
