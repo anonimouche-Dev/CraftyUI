@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jUXoccg/4/Y=",
+  "dgSpecHash": "nNVbmBecmWg=",
   "success": true,
   "projectFilePath": "C:\\git\\CodeCraftUX\\CraftyUI\\CraftyUI\\CraftyUI.csproj",
   "expectedPackageFiles": [
@@ -167,7 +167,11 @@
     "C:\\Users\\natha\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.android-arm64\\8.0.6\\microsoft.netcore.app.runtime.mono.android-arm64.8.0.6.nupkg.sha512",
     "C:\\Users\\natha\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.iossimulator-x64\\8.0.6\\microsoft.netcore.app.runtime.mono.iossimulator-x64.8.0.6.nupkg.sha512",
     "C:\\Users\\natha\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.maccatalyst-x64\\8.0.6\\microsoft.netcore.app.runtime.mono.maccatalyst-x64.8.0.6.nupkg.sha512",
-    "C:\\Users\\natha\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512"
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.maccatalyst-arm64\\8.0.6\\microsoft.netcore.app.runtime.mono.maccatalyst-arm64.8.0.6.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\8.0.5\\microsoft.netcore.app.crossgen2.win-x64.8.0.5.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.5\\microsoft.aspnetcore.app.runtime.win-x64.8.0.5.nupkg.sha512",
+    "C:\\Users\\natha\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.5\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.5.nupkg.sha512"
   ],
   "logs": []
 }

@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CraftyUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+9808fdb40788337e576bd0b0091cabef59ad260e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3ce45e7a7bcd21fb2fe5d9daa483b8c7f5f6a2ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("CraftyUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CraftyUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
