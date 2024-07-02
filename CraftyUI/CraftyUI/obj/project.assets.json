@@ -68132,24 +68132,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Runtime.Mono.android-arm",
-            "version": "[8.0.6, 8.0.6]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Runtime.Mono.android-arm64",
-            "version": "[8.0.6, 8.0.6]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Runtime.Mono.android-x64",
-            "version": "[8.0.6, 8.0.6]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Runtime.Mono.android-x86",
-            "version": "[8.0.6, 8.0.6]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.Android": {
             "privateAssets": "all"
@@ -68209,12 +68191,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Runtime.Mono.iossimulator-x64",
-            "version": "[8.0.6, 8.0.6]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.iOS": {
             "privateAssets": "all"
@@ -68275,16 +68251,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Runtime.Mono.maccatalyst-arm64",
-            "version": "[8.0.6, 8.0.6]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Runtime.Mono.maccatalyst-x64",
-            "version": "[8.0.6, 8.0.6]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.MacCatalyst": {
             "privateAssets": "all"

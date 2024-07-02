@@ -7,7 +7,7 @@
 
     Pour plus d'informations sur les fichiers manifeste, consultez http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="com.companyname.craftyui" Publisher="CN=anonimouche_" Version="0.75.2.0" ProcessorArchitecture="x64" />
+  <Identity Name="com.companyname.craftyui" Publisher="CN=anonimouche_" Version="0.74.7.0" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="77D8288F-44C5-4DC0-AF2E-9B05A31CAF3F" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>CraftyUI</DisplayName>
